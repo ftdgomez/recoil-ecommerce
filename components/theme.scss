@@ -1,12 +1,13 @@
 @use "./abstracts" as *;
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;800&display=swap');
+
 * {
   font-family: 'Urbanist', sans-serif;
 }
 // generate fontsizes css variables
 :root {
     @each $size, $value in $fontSizes {
-        --fontSizes-#{$size}: #{$value};
+        --font-size-#{$size}: #{$value};
     }
     @each $color, $value in $colors {
         --color-#{$color}: #{$value};
@@ -14,3 +15,4 @@
     --font-weight-thin: 100;
     --font-weight-bold: 800;
 }
+

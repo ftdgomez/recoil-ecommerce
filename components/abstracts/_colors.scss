@@ -13,3 +13,19 @@ $colors: (
     "border": #e1e1e1,
     "text": #727272,
 );
+@function color-contrast($color, $location: null) {
+  // return dark text on light background
+  @if (lightness($color) > 48) {
+    @return #000;
+  }
+  // return light text on dark background
+  @else {
+    // return special location dependent light text
+    @if ($location == location) {
+      @return #bbb;
+    } @else {
+      @return #fff;
+    }
+    @return #fff;
+  }
+}

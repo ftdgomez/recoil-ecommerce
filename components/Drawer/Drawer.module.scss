@@ -1,0 +1,68 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+.back {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+	padding: 0;
+	overflow: hidden;
+	display: none;
+}
+
+.container {
+	background-color: white;
+}
+
+.right {
+	position: fixed;
+	right: 0%;
+	top: 0;
+	height: 100%;
+	min-width: 300px;
+	display: none;
+	flex-direction: column;
+	z-index: 110;
+	animation: slideInRight 0.5s ease forwards;
+}
+
+.container h3 {
+	padding: 1rem;
+	font-size: var(--font-size-2xl);
+	border-bottom: 1px solid var(--color-border);
+	margin: 0;
+}
+
+.container button {
+	margin: 0;
+	padding: 0.5rem;
+	width: 100%;
+	border: 0;
+	border-top: 1px solid var(--color-border);
+	background-color: white;
+	margin-top: auto;
+	font-size: var(--font-size-lg);
+	background-color: var(--color-primary);
+	color: color-contrast(map.get($colors, "primary"));
+}
+
+.open {
+	display: block;
+	.right {
+		display: flex;
+	}
+}
+
+.closed {
+}
+
+.container {
+}
+
+.content {
+	padding: 1rem;
+}

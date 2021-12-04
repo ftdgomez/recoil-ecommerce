@@ -64,7 +64,7 @@ export const ShoppingCartItem = ({ product }: ShoppingCartItemProps) => {
 			</div>
 			<main>
 				<h3>{name}</h3>
-				<p>{quantity} x {price}</p>
+				<p>{quantity || 'qty not set'} x {price}</p>
 				<p>total: {(quantity * price).toFixed(2)}</p>
 				<p>
 					<span onClick={() => removeFromCart(cart, setCart, product)}>

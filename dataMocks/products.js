@@ -47,4 +47,52 @@ export const products = [
 		rating: 4,
 		reviews: []
 	},
+	{
+		id: 5,
+		name: 'Product 5',
+		price: 10,
+		picture: 'https://via.placeholder.com/300x200/',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		stock: 10,
+		category: 'category 1',
+		tags: ['tag 1', 'tag 2'],
+		rating: 4,
+		reviews: []
+	},
+	{
+		id: 6,
+		name: 'Product 6',
+		price: 10,
+		picture: 'https://via.placeholder.com/300x200/',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		stock: 10,
+		category: 'category 1',
+		tags: ['tag 1', 'tag 2'],
+		rating: 4,
+		reviews: []
+	},
+	{
+		id: 7,
+		name: 'Product 7',
+		price: 10,
+		picture: 'https://via.placeholder.com/300x200/',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		stock: 10,
+		category: 'category 1',
+		tags: ['tag 1', 'tag 2'],
+		rating: 4,
+		reviews: []
+	},
+	{
+		id: 8,
+		name: 'Product 8',
+		price: 10,
+		picture: 'https://via.placeholder.com/300x200/',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		stock: 10,
+		category: 'category 1',
+		tags: ['tag 1', 'tag 2'],
+		rating: 4,
+		reviews: []
+	},
 ]

@@ -1,0 +1,82 @@
+$animationIntensity: cubic-bezier(1, 0.1, 0.2, 0.94);
+
+.slider {
+	display: flex;
+	transition: 0.8s $animationIntensity;
+	> div {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		min-height: 845px;
+		position: relative;
+	}
+}
+.container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+.arrow {
+	position: absolute;
+	margin: 1rem;
+	top: calc(50% - 100px);
+	height: 50px;
+	width: 50px;
+	border: 1px solid var(--color-border);
+	background-color: white;
+	border-radius: 999px;
+	cursor: pointer;
+	transition: 0.4s $animationIntensity;
+	box-shadow: var(--shadow-md);
+	transform: scale(1);
+	&:hover {
+		transform: scale(1.1);
+		background-color: var(--color-primary);
+		color: white;
+	}
+	&:disabled {
+		opacity: 0.9;
+		cursor: inherit;
+		&:hover {
+			transform: scale(1);
+			background-color: white;
+		}
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+.right {
+	right: 0;
+}
+.left {
+	left: 0;
+}
+
+.dots {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	transform: translate(calc(50vw - 50%), 0);
+	margin-bottom: 2rem;
+}
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 999px;
+	margin: 0.5rem;
+	border: 1px solid var(--color-border);
+	background-color: transparent;
+	transition: all 1s $animationIntensity;
+	cursor: pointer;
+	transition: 0.4s $animationIntensity;
+	&:hover {
+		transform: scale(2);
+	}
+}
+.dotIsActive {
+	background-color: white;
+}
